@@ -16,15 +16,7 @@ export function AccountDataTable() {
       <TableHeader>
         <TableRow>
           <TableHead>haha</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableHeader>
-        <TableRow>
-          <TableHead>flexRender</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableHeader>
-        <TableRow>
+          <TableHead>haha</TableHead>
           <TableHead>haha</TableHead>
         </TableRow>
       </TableHeader>

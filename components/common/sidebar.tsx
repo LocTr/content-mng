@@ -31,12 +31,12 @@ export function ComposedSidebar() {
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/#",
     icon: Home,
   },
   {
     title: "Accounts",
-    url: "#",
+    url: "/accounts",
     icon: UserSearch,
   },
 ]
