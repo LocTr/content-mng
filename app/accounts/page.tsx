@@ -1,4 +1,4 @@
-import { AccountDataTable } from "@/components/common/accountTable"
+import { AccountDataTable } from "@/components/common/AccountTable"
 
 export default function AccountsPage() {
   return (

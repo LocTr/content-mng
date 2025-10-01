@@ -1,3 +1,4 @@
+"use client"
 import { Home, UserSearch } from "lucide-react"
 import {
   Sidebar,
@@ -6,15 +7,18 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "../ui/sidebar"
+import { usePathname } from "next/navigation"
 
 export function ComposedSidebar() {
+  const pathname = usePathname()
+
   return (
     <Sidebar>
       <SidebarContent>
         <SidebarMenu>
           {items.map((item) => (
             <SidebarMenuItem key={item.title}>
-              <SidebarMenuButton asChild>
+              <SidebarMenuButton isActive={pathname == item.url} asChild>
                 <a href={item.url}>
                   <item.icon />
                   {item.title}
@@ -31,7 +35,7 @@ export function ComposedSidebar() {
 const items = [
   {
     title: "Home",
-    url: "/#",
+    url: "/",
     icon: Home,
   },
   {
